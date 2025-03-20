@@ -1,16 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-h1{
-    font-family: 'Poppins', sans-serif;
+
+
+body {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+
+.voltar{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #57534E;
+  
+}
+.informações{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-top: 1rem;
+}
+.titulo{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  margin-left: 3rem;
+  vertical-align: middle;
+}
+
+h2 {
+  font-family:  'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-left: 3rem;
+   
 }
 h3{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0%;
-    vertical-align: middle;
+  font-family:  'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  margin-left: 3rem;
+}
+label{
+  display: block;
+  margin-left: 3rem;
 
 }
-main{
-    background-color: aqua;
+input{
+  margin-left: 3rem;
+}
+select{
+  margin-left: 3rem;
+}
+.container {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: 6rem;
+}
+
+.form-container { 
+  width: 656px;
+
+  
+}
+
+.image-container {
+   /* Fixa no topo da tela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  background-color:#0056b3;
+  width: 700px;
+  height: 500px;  
+}
+
+
+
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  
+}
+
+input, select {
+  width: 528px;
+  height: 48px;
+  gap: spacing/spacing-2;
+  border-radius: 8px;
+  border-width: 2px;
+  padding-top: spacing/spacing-3;
+  padding-right: spacing/spacing-4;
+  padding-bottom: spacing/spacing-3;
+  padding-left: spacing/spacing-4;
+
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  margin-left: 3rem;
+}
+
+#upload-box {
+  width: 78%;
+  padding: 10px;
+  text-align: center;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  margin-left: 3rem;
+}
+
+.trilhas-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.trilha {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px;
+  text-align: center;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.trilha.ativa {
+  background-color: #007bff;
+  color: white;
+}
+
+.termos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 5px;
+  margin-top: 15px;
+
+}
+input[type="checkbox"] {
+  width: 40px;/* Define a largura */
+  height: 40px; /* Define a altura */
+
+
+}
+
+.botoes {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.cancelar {
+  background-color: #ccc;
+}
+
+button.inscricao {
+  background-color: #007bff;
+  color: white;
+}
+
+button.inscricao:hover {
+  background-color: #0056b3;
 }
