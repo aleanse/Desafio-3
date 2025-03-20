@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Inscrição</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
 
             <form id="form">
                 <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome">
 
                 <label for="numero">Número</label>
                 <input type="text" id="numero" name="numero" required>
@@ -70,13 +70,23 @@
                 </select>
 
                 <h3>Trilhas de Aprendizado</h3>
-                <p>Selecione apenas uma trilha</p>
+                <p>Selecione apenas uma trilha:</p>
                 <div class="trilhas-container">
-                    <div class="trilha">Programação Front-End</div>
-                    <div class="trilha">Programação Back-End</div>
-                    <div class="trilha">Programação de Jogos</div>
-                    <div class="trilha">Design e Experiência</div>
-                    <div class="trilha">Ciência de Dados</div>
+                    <label class="opcao">
+                        <input type="radio" name="trilha" value="front-end" required> Programação Front-End
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="trilha" value="back-end"> Programação Back-End
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="trilha" value="jogos"> Programação de Jogos
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="trilha" value="design"> Design e Experiência
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="trilha" value="dados"> Ciência de Dados
+                    </label>
                 </div>
 
                 <div class="termos">
@@ -95,6 +105,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
