@@ -36,3 +36,10 @@ Este projeto é um sistema simples de **formulário de inscrição** com **valid
   - Verificação com os dados armazenados.
   - Alerta para sucesso ou falha no login.
   - Interface responsiva e centralizada.
+## ☁️ Deploy na nuvem
+
+Este projeto foi hospedado e está disponível online através da plataforma **Vercel**.
+
+Você pode acessá-lo diretamente neste link: [https://desafio-3-lqsdyr6ky-aleanses-projects.vercel.app/](https://desafio-3-lqsdyr6ky-aleanses-projects.vercel.app/)
+
+
