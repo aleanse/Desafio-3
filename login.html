@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="login-id">ID do Usuário</label>
+      <input type="text" id="login-id" name="login-id" required>
+
+      <label for="login-senha">Senha</label>
+      <input type="password" id="login-senha" name="login-senha" required>
+
+      <div class="mensagem-erro" id="mensagem-erro">Usuário ou senha incorretos.</div>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const user = document.getElementById('login-id').value;
+      const pass = document.getElementById('login-senha').value;
+
+      const savedUser = localStorage.getItem('userId');
+      const savedPass = localStorage.getItem('senha');
+
+      if (user === savedUser && pass === savedPass) {
+        alert('Login realizado com sucesso!');
+      } else {
+        alert('ID ou senha incorretos!');
+      }
+    });
+  </script>
+</body>
+</html>
