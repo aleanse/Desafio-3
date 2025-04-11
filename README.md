@@ -9,7 +9,7 @@ Este projeto é um sistema simples de **formulário de inscrição** com **valid
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/aleanse/Desafio-3
 ## 🛠 Tecnologias utilizadas
 
 - **HTML5** – estruturação da aplicação.

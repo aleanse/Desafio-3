@@ -14,7 +14,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
   const cpf = form.cpf.value.trim();
   const numero = form.numero.value.trim();
   
-  // Verifica se campos estão vazios
+ 
   
 
   if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
